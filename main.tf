@@ -38,5 +38,5 @@ resource "docker_container" "web" {
     target = "/usr/share/nginx/html"
     source = abspath("${path.module}/html")
     type   = "bind"
-  
+  }
 }
